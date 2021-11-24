@@ -1,0 +1,158 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* variave */
+:root{
+    --navbar-height:59px;
+}
+/*navbar Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*navbar logo and img*/
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 20px;
+}
+/*navbar list styling*/
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: brown;
+    background-color: white;
+    
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: ""; 
+    position: absolute;
+    background:url('campus.jpg') no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/*Services Container*/
+#services .box{
+    display: flex;
+    height: 333px;
+    width: 450px;
+    flex-direction: column;
+    /*border: 2px solid red;*/
+}
+#services .box img{
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+#services .box2{
+    display: flex;
+    height: 333px;
+    width:450px;
+    flex-direction: column;
+   /** border: 2px solid red;*/
+}
+#services .box2 img{
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+#services .box3{
+    display: flex;
+    height: 333px;
+    width: 450px;
+    flex-direction: column;
+   /* border: 2px solid red;*/
+}
+#services .box3 img{
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+#services{
+    background-color: rgb(214, 208, 208);
+    opacity: .8;
+    
+}
+/*Utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    color: black;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+p{
+    font-size: 1.1rem;
+}
+.btn{
+    color: white;
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color:brown;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 17px;
+}
+#id{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    /**border: 2px solid red;**/
+}
+ .time {
+        position: static;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-align:left;
+}
